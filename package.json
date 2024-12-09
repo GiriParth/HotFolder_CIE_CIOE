@@ -1,0 +1,23 @@
+{
+  "name": "cie_coe_hf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/storage": "^7.14.0",
+    "@google-cloud/vision": "^4.3.2",
+    "fs-extra": "^11.2.0",
+    "moment": "^2.30.1",
+    "mssql": "^11.0.1",
+    "path": "^0.12.7",
+    "pdfkit": "^0.15.1",
+    "uuid": "^11.0.3",
+    "winston": "^3.17.0"
+  }
+}
