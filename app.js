@@ -210,7 +210,7 @@ async function createPDFAndUpload(fileName, record) {
   record.pdfName = pdfName;
 
   try {
-    const folderName = `${record.companyName}_TEST`;
+    const folderName = `${record.companyName}`;
     const gcsFileName = `${folderName}/${pdfName}`;
     const metadata = {
       metadata: {
@@ -264,7 +264,7 @@ async function insertDataIntoDB(records) {
 
     for (const record of records) {
       const query = `
-        INSERT INTO pensionerTableTag (
+        INSERT INTO pensionerTable (
           pensionID, fName, lName, pensionProvider, companyName,
           addr1, addr2, addr3, city, county, eircode,
           ppsn, dob, phone, emailId, pdfName,
